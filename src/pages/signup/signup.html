@@ -1,0 +1,74 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+  -->
+<ion-header>
+
+  <ion-navbar>
+
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding style="background-color: #f4f4f4;">
+
+  <div class="main">
+    <div class="heading">
+      Sign Up
+    </div>
+    <div style="margin-bottom: 26px">
+      <input class="inputStyle" type="text" placeholder="Mobile Number" />
+    </div>
+    <div style="margin-bottom: 26px">
+      <input class="inputStyle" type="password" placeholder="Password" />
+    </div>
+    <div style="margin-bottom: 26px">  
+      <input class="inputStyle" type="number" placeholder="Age" />
+    </div>
+    <div>
+
+      <ion-row>
+        <ion-col text-center col-4 class="gender" no-padding>
+            Gender 
+        </ion-col>
+        <ion-col  no-padding text-center col-2 class="gender-value"  (click)="toggleGender('male')">
+          Male   
+          </ion-col>
+          <ion-col col-1 no-padding>
+              <ion-icon no-padding class="check" name="checkmark" *ngIf="gender == 'male'"> </ion-icon>
+          </ion-col>
+          <ion-col   style="margin-left: 5px" no-padding text-center col-3 class="gender-value" (click)="toggleGender('female')">
+          Female   
+            </ion-col>
+            <ion-col col-1  no-padding >
+                <ion-icon no-padding class="check" name="checkmark" *ngIf="gender == 'female'"></ion-icon>
+              </ion-col>
+      </ion-row>
+
+      <!-- <ion-list radio-group>
+        <ion-list-header>
+          Gender
+        </ion-list-header>
+
+        <ion-item>
+          <ion-label>Male</ion-label>
+          <ion-radio checked="true" value="Male"></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Female</ion-label>
+          <ion-radio value="Female"></ion-radio>
+        </ion-item>
+
+
+      </ion-list> -->
+    </div>
+    <div class="login-btn">
+      <button full ion-button color="danger">Submit</button>
+    </div>
+  </div>
+
+
+</ion-content>

@@ -6,9 +6,14 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'home.html'
 })
 export class HomePage {
-
+  isAboutShow :boolean = false
+  rotateArrow : boolean = false
   constructor(public navCtrl: NavController) {
 
+  }
+  showAbout(){
+      this.isAboutShow = ! this.isAboutShow
+      this.rotateArrow = ! this.rotateArrow
   }
 
 }
