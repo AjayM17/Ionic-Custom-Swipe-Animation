@@ -1,0 +1,7 @@
+{
+  "name": "Date",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
