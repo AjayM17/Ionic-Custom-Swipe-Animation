@@ -1,0 +1,150 @@
+page-strangers {
+
+    .card-row{
+         //   margin-top: 30px;
+    }
+    
+    .first-card {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 60vh;
+        // filter: blur(2px); 
+        left: -18px;
+        width: 18%;
+        margin-top: 20px;
+        -webkit-transform: rotate(5deg);
+        transform: rotate(-5deg);
+        border: 1px solid white !important;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+     
+       
+    }
+    .middle-card-parent {
+        border-radius: 8px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 87%;
+        margin-left: -40px;
+        background-position: center center;
+        z-index: 999;
+        position: relative;
+        height: 64vh;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    }
+    .middle-card {
+        z-index: 999;
+        border-radius: 8px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        position: relative;
+        height: 100%;
+        border: 1px solid white;
+        background-position: center center;
+       // box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+       
+    }
+    .middle-card-info {
+        border-radius: 0px 0px 4px 4px;
+        padding: 15px;
+        position: absolute;
+        background: #ffffffe8;
+    //    background-image: linear-gradient(#f4f4f400, #ffffff73, #424242); // background-image: linear-gradient(white, #ddd5e4,   #dedede);
+        bottom: 0px;
+        .middle-card-name {
+            font-size: 16px;
+            font-weight: 500;
+           
+        }
+        .middle-card-profession {
+            font-size: 12px;
+            color: white;
+        }
+        .middle-card-distance {
+            font-size: 13px;
+            font-weight: 500;
+           
+        }
+    }
+    .last-card {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 60vh;
+        right: 0px;
+        left: 22px;
+        width: 18%;
+        margin-left: -47px;
+        -webkit-transform: rotate(-5deg);
+        transform: rotate(5deg);
+        margin-top: 20px;
+        border: 1px solid white !important;
+        -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+       
+    }
+   
+        .footer-icon {
+            
+        }
+        .dislike {
+            color: #dedede;
+        }
+        // .like {
+        //     color: #dedede
+        // }
+        // .chat {
+        //     color: #343434
+        // }
+    
+   
+
+        .action-row{
+            margin-top: 35px;
+           
+            border-radius: 7px;
+
+            background: white !important;
+            margin-top: 35px;
+            padding: 8px 6px;
+
+            .icon-bg{
+               // box-shadow: 0 0px 0px rgba(0,0,0,0), 0 0px 0px ;
+               box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+                // border-radius: 50%;
+                // padding: 7px;
+                // width: 35px;
+                // height: 35px;
+            }
+            .like{
+                background: #ffbf00;
+                color: white;
+                
+                font-size: 26px;
+                width: 36px;
+                padding: 6px 6px;
+                border-radius: 50%;
+                height: 36px;
+            }
+            .unlike{
+                background: white;
+                color: red;
+                font-size: 26px;
+                width: 35px;
+                padding: 5px 10px;
+                border-radius: 50%;
+                height: 35px;
+            }
+
+            .hello{
+                background: #2E8B57;
+                color: white;
+                font-size: 26px;
+                width: 36px;
+                padding: 4px 0px;
+                border-radius: 50%;
+                height: 36px;
+            }
+        }
+}

@@ -1,0 +1,27 @@
+page-chat {
+
+    .user{
+        border-bottom: 1px solid #eee;
+        padding: 10px 0px;
+        margin: 6px 0px;
+    }
+    .image {
+        background-repeat: repeat;
+        background-image: url(../../assets/imgs/img.jpeg);
+        background-position: center;
+        background-size: contain;
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+    }
+    .last-message {
+        font-size: 13px;
+        color: #999;
+        margin: 2px 0px;
+    }
+
+    .status{
+        font-size: 12px;
+    font-weight: 300;
+    }
+}

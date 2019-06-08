@@ -1,0 +1,32 @@
+page-login {
+    .main {
+        padding: 0px 20px
+    }
+    .heading {
+        font-style: italic;
+        text-align: center;
+        font-size: 32px;
+        font-weight: 500;
+        margin-top: 40%;
+        color: #424242;
+        margin-bottom: 50px;
+    }
+    .inputStyle {
+        display: block;
+        width: 100%;
+        padding: 14px;
+        border: 1px solid #f53d3d;
+        border-radius: 4px
+    }
+    .login-btn {
+        text-align: center;
+        margin-top: 40px
+    }
+    .signup {
+        color: #f53d3d;
+        font-weight: 300;
+        font-size: 16px;
+        text-align: center;
+        margin-top: 20px;
+    }
+}

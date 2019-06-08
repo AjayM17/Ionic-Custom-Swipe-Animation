@@ -1,0 +1,40 @@
+page-signup {
+    .main{
+        padding: 0px 20px
+    }
+    .heading{
+      
+       
+    font-size: 25px;
+  
+    margin-top: 20%;
+    color: #424242;
+    margin-bottom: 40px;
+    }
+    
+    .inputStyle{
+        display: block;
+        width: 100%;
+        /* margin: auto; */
+        padding: 14px;
+        border: 1px solid #f53d3d;
+        border-radius: 4px;
+    }
+    .login-btn{
+      
+        margin: 40px 0px;
+    }
+
+    .gender-value{
+        color: #424242;
+        font-size: 15px;
+       
+    }
+    .check{
+        color: #f53d3d
+    }
+    .gender{
+        font-size: 15px;
+        color: #f53d3d;
+    }
+}

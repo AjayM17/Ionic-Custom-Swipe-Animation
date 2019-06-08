@@ -1,0 +1,110 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>People Arround You</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content padding style="background-image: linear-gradient(#eee, #ddd5e4,
+  #dedede)">
+  <ion-row class="card-row">
+    <ion-item no-lines no-padding class="first-card"
+      [ngStyle]="{'background-image':'url(../../assets/imgs/'+card_first_img+')'}">
+    </ion-item>
+    <div (swipe)="swipeCard(card_middle_image,$event)"
+      [@duringSwipe]="addBorder" no-lines no-padding class="middle-card-parent"
+      [ngStyle]="{'background-image':'url(../../assets/imgs/'+card_middle_parent_image+')'}">
+     
+      <div  class="middle-card"
+        [ngStyle]="{'background-image':'url(../../assets/imgs/'+card_middle_image+')'}"
+        [@swipeEvent]="{value : swipeLeftAnimation ,params: {card_middle_image :
+        card_middle_image ,card_middle_parent_image :
+        card_middle_parent_image}}" (@swipeEvent.done)="swipeAnimationEnd($event)" (@swipeEvent.start)="swipeAnimationStart($event)">
+        <div class="middle-card-info" style="width: 100%">
+            <ion-row>
+                <ion-col col-7 class="middle-card-name">
+                    {{name}}
+                  </ion-col>
+                  <ion-col col-5 class="middle-card-distance">
+                      {{distance}} Km  Away
+                    </ion-col>
+            </ion-row>
+          
+          <!-- <ion-row>
+            <ion-col col-7 class="middle-card-profession">
+              {{profession}}
+            </ion-col>
+            <ion-col col-2 text-right class="middle-card-profession">
+              <ion-icon name="ios-navigate-outline"
+                class="middle-card-distance-icon"></ion-icon>
+            </ion-col>
+            <ion-col col-3 text-right class="middle-card-profession">
+              {{ distance}} Km
+            </ion-col>
+          </ion-row> -->
+          <!-- <ion-row>
+            <ion-col col-4>
+              <ion-icon name="thumbs-up" (click)="show()" class="footer-icon like"></ion-icon>
+            </ion-col>
+            <ion-col col-4 col-4 text-center>
+              <ion-icon name="ios-chatbubbles" class="footer-icon chat"></ion-icon>
+            </ion-col>
+            <ion-col col-4 col-4 text-right>
+              <ion-icon name="thumbs-down" class="footer-icon dislike"></ion-icon>
+            </ion-col>
+          </ion-row> -->
+        </div>
+      </div>
+      <div class="middle-card-info" style="width: 100%" *ngIf=showParantCardInfo>
+          <ion-row>
+              <ion-col col-7 class="middle-card-name">
+                  {{name}}
+                </ion-col>
+                <ion-col col-5 class="middle-card-distance">
+                    {{distance}} Km  Away
+                  </ion-col>
+          </ion-row>
+        <!-- <ion-row>
+          <ion-col col-7 class="middle-card-profession">
+            {{profession}}
+          </ion-col>
+          <ion-col col-2 text-right class="middle-card-profession">
+            <ion-icon name="ios-navigate-outline"
+              class="middle-card-distance-icon"></ion-icon>
+          </ion-col>
+          <ion-col col-3 text-right class="middle-card-profession">
+            {{ distance}} Km
+          </ion-col>
+        </ion-row> -->
+        <!-- <ion-row>
+          <ion-col col-4>
+            <ion-icon name="thumbs-up" (click)="show()" class="footer-icon like"></ion-icon>
+          </ion-col>
+          <ion-col col-4 col-4 text-center>
+            <ion-icon name="ios-chatbubbles" class="footer-icon chat"></ion-icon>
+          </ion-col>
+          <ion-col col-4 col-4 text-right>
+            <ion-icon name="thumbs-down" class="footer-icon dislike"></ion-icon>
+          </ion-col>
+        </ion-row> -->
+      </div>
+    </div>
+    <ion-item no-lines no-padding class="last-card"
+      [ngStyle]="{'background-image':'url(../../assets/imgs/'+card_last_image+')'}">
+    </ion-item>
+  </ion-row>
+
+  <ion-row class="action-row">
+    <ion-col col-4 text-center>
+      <ion-icon name="close" class="icon-bg unlike"></ion-icon>
+    </ion-col>
+
+    <ion-col col-4 text-center>
+        <ion-icon name="ios-hand" class="icon-bg hello"></ion-icon>
+      </ion-col>
+   
+    <ion-col col-4 text-center>
+      <ion-icon name="md-heart" class="icon-bg like"></ion-icon>
+    </ion-col>
+  </ion-row>
+</ion-content>

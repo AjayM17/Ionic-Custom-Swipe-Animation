@@ -1,14 +1,22 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+
+<ion-content  >
+  <div class="profile">
+     
+        <div  class="profile-info">
+          <div class="arrow" (click)="showAbout()" [ngClass]="rotateArrow ? 'arrow-rotate-down' : 'arrow-rotate-up'">  <ion-icon name="md-arrow-round-up"></ion-icon></div>
+            <div class="name"> Alixa</div>
+            <div class="address">
+                Noida
+              </div>
+              <div class="about" [ngClass]="isAboutShow ? 'about-show' : 'about-hide'">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+
+              </div>
+        </div>
+
+       
+        
+  </div>
+   
 </ion-content>
